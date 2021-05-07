@@ -32,11 +32,8 @@ module.exports = {
           GuildDB ? GuildDB.prefix : client.config.DefaultPrefix
         }help [Command]`
       ).setDescription(`${Commands.join("\n")}
-
 Discord Music Bot Version: v${require("../package.json").version}
-[✨ Support Server](${
-      client.config.SupportServer
-    }) | [GitHub](https://github.com/SudhanPlayz/Discord-MusicBot) | By [SudhanPlayz](https://github.com/SudhanPlayz) and its [contributers](https://github.com/SudhanPlayz/Discord-MusicBot/graphs/contributors)`);
+| [Discord](https://discord.gg/FsEEatc89d) | By [Samyak](https://in.linkedin.com/in/samyak-nagdive-835b53201) and its [contributers](https://discord.gg/FsEEatc89d)`);
     if (!args[0]) message.channel.send(Embed);
     else {
       let cmd =
@@ -104,9 +101,7 @@ SlashCommand: {
         ).setDescription(`${Commands.join("\n")}
   
   Discord Music Bot Version: v${require("../package.json").version}
-  [✨ Support Server](${
-        client.config.SupportServer
-      }) | [GitHub](https://github.com/SudhanPlayz/Discord-MusicBot) | By [SudhanPlayz](https://github.com/SudhanPlayz)`);
+      }) | [Discord](https://discord.gg/FsEEatc89d) | By [Samyak](https://in.linkedin.com/in/samyak-nagdive-835b53201)`);
       if (!args[0]) interaction.send(Embed);
       else {
         let cmd =
